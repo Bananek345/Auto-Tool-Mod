@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "autotoolmod",
+  "version": "1.0.0",
+  "name": "AutoToolMod",
+  "description": "AutoTool mod for 1.21.4",
+  "authors": ["bananek355"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pl.bananek355.autotoolmod.Autotoolmod"
+    ],
+    "client": [
+      "pl.bananek355.autotoolmod.client.AutotoolmodClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "autotoolmod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4"
+  }
+}
